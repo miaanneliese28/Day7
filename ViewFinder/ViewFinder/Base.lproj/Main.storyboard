@@ -51,7 +51,7 @@
         <!--Add New Photo-->
         <scene sceneID="K7Z-lO-Dwn">
             <objects>
-                <viewController id="2uA-Zp-cB0" sceneMemberID="viewController">
+                <viewController id="2uA-Zp-cB0" customClass="AddPhotoViewController" customModule="ViewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="21U-a5-85M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,16 +61,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="takeSelfieTapped:" destination="2uA-Zp-cB0" eventType="touchUpInside" id="a4d-rN-UQK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9G-nM-vAY">
                                 <rect key="frame" x="271" y="561" width="79" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Albums"/>
+                                <connections>
+                                    <action selector="photoLibraryTapped:" destination="2uA-Zp-cB0" eventType="touchUpInside" id="t9P-CI-b1n"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="4TG-M3-ZkQ">
-                                <rect key="frame" x="87" y="175" width="240" height="171"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add a caption!" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D7r-Cq-cjf">
                                 <rect key="frame" x="131" y="385" width="153" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -84,16 +87,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Save this photo"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="4TG-M3-ZkQ">
+                                <rect key="frame" x="49" y="171" width="296" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Ra6-kx-dSe" firstAttribute="trailing" secondItem="4TG-M3-ZkQ" secondAttribute="trailing" constant="87" id="1QP-CP-sNF"/>
-                            <constraint firstItem="4TG-M3-ZkQ" firstAttribute="leading" secondItem="Ra6-kx-dSe" secondAttribute="leading" constant="87" id="fRz-vV-7EV"/>
-                            <constraint firstItem="4TG-M3-ZkQ" firstAttribute="top" secondItem="Ra6-kx-dSe" secondAttribute="top" constant="87" id="tOY-Kb-tP7"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ra6-kx-dSe"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="Mk0-38-N2w"/>
+                    <connections>
+                        <outlet property="displayImage" destination="4TG-M3-ZkQ" id="tgQ-K5-QcL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oPr-NZ-SA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

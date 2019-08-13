@@ -14,6 +14,7 @@
 		0DCB06D12302F0C40043DE27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCB06CF2302F0C40043DE27 /* LaunchScreen.storyboard */; };
 		0DCB06DC2302F0C40043DE27 /* ViewFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB06DB2302F0C40043DE27 /* ViewFinderTests.swift */; };
 		0DCB06E72302F0C40043DE27 /* ViewFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB06E62302F0C40043DE27 /* ViewFinderUITests.swift */; };
+		0DCB06F72302FEFF0043DE27 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB06F62302FEFF0043DE27 /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0DCB06E22302F0C40043DE27 /* ViewFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DCB06E62302F0C40043DE27 /* ViewFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFinderUITests.swift; sourceTree = "<group>"; };
 		0DCB06E82302F0C40043DE27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DCB06F62302FEFF0043DE27 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		0DCB06B72302F0C00043DE27 = {
 			isa = PBXGroup;
 			children = (
+				0DCB06F62302FEFF0043DE27 /* AddPhotoViewController.swift */,
 				0DCB06C22302F0C00043DE27 /* ViewFinder */,
 				0DCB06DA2302F0C40043DE27 /* ViewFinderTests */,
 				0DCB06E52302F0C40043DE27 /* ViewFinderUITests */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DCB06CC2302F0C00043DE27 /* ViewFinder.xcdatamodeld in Sources */,
+				0DCB06F72302FEFF0043DE27 /* AddPhotoViewController.swift in Sources */,
 				0DCB06C42302F0C00043DE27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
